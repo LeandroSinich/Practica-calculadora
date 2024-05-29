@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Major+Mono+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Kode+Mono:wght@400..700&family=Major+Mono+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Kode+Mono:wght@400..700&family=Major+Mono+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="calculadora">
+            <input type="text" id="pantalla" value="0" readonly>
+
+            <input class="item" type="button" value="%" onclick="agregar('%')">
+
+            <input class="item" type="button" value="CE" onclick="borrarParam()">
+            <input class="item" type="button" value="C" onclick="borrarTodo()">
+
+            <input class="item" type="button" value="⇚" onclick="borrarCaracter()">
+            <input class="item" id="especiales" type="button" value="½" onclick="especiales('½')">
+            <input class="item" id="especiales" type="button" value="x²" onclick="especiales('x²')">
+            <input class="item" id="especiales" type="button" value="√x" onclick="especiales('√x')">
+            <input class="item" type="button" value="/" onclick="agregar('/')">
+            <input id="number" class="item" type="button" value="7" onclick="agregar(7)">
+            <input id="number" class="item" type="button" value="8" onclick="agregar(8)">
+            <input id="number" class="item" type="button" value="9" onclick="agregar(9)">
+            <input class="item" type="button" value="x" onclick="agregar('*')">
+            <input id="number" class="item" type="button" value="4" onclick="agregar(4)">
+            <input id="number" class="item" type="button" value="5" onclick="agregar(5)">
+            <input id="number" class="item" type="button" value="6" onclick="agregar(6)">
+            <input class="item" type="button" value="-" onclick="agregar('-')">
+            <input id="number" class="item" type="button" value="1" onclick="agregar(1)">
+            <input id="number" class="item" type="button" value="2" onclick="agregar(2)">
+            <input id="number" class="item" type="button" value="3" onclick="agregar(3)">
+            <input class="item" type="button" value="+" onclick="agregar('+')">
+            <input class="item" type="button" value="∓" onclick="especiales('∓')">
+            <input id="number" class="item" type="button" value="0" onclick="agregar('0')">
+            <input class="item" type="button" value="." onclick="agregar('.')">
+            <input class="item" type="button" id="result" value="=" onclick="calcular()">
+
+        </div>
+        <div class="container2">
+            <h1>Leandro <span class="mayus">S</span>inich</h1>
+            <h3>Full-Stack Developer</h3>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
